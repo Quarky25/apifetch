@@ -1,0 +1,12 @@
+<!-- async means, wait until the property receives the value -->
+@if (joke$ | async) {
+<p>{{ result.joke }}</p>
+}
+
+<p>{{ resultFromService.joke }}</p>
+
+<h1 class="exercise1">{{ resultFromPlaceholder.title }}</h1>
+
+<h1 class="exercise2">
+  {{ resultFromReqres.first_name && resultFromReqres.last_name }}
+</h1>
