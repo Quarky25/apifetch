@@ -9,6 +9,6 @@ export class ReqresApiService {
   constructor(private http: HttpClient) { }
 
   getReqres(){
-    return this.http.get<any>('https://reqres.in/users')
+    return this.http.get<any>('https://reqres.in/api/users?page=2&per_page=5')
   }
 }

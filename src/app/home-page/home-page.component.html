@@ -8,5 +8,9 @@
 <h1 class="exercise1">{{ resultFromPlaceholder.title }}</h1>
 
 <h1 class="exercise2">
-  {{ resultFromReqres.first_name && resultFromReqres.last_name }}
+  {{
+    resultFromReqres.first_name &&
+      resultFromReqres.last_name &&
+      resultFromReqres.avatar
+  }}
 </h1>
